@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{news.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="news.urlToImage">
+  <mat-card-content>
+    <p>
+      {{news.content}}
+    </p>
+  </mat-card-content>
+</mat-card>
+<button [routerLink]="['']" mat-button>Go back</button>

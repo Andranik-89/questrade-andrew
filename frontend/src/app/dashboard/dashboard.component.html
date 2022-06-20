@@ -1,0 +1,6 @@
+<button (mousedown)="generateNews()" mat-button>Generate news!</button>
+
+<h2>News:</h2>
+<mat-list role="list">
+  <mat-list-item [ngStyle]="{'cursor': 'pointer', 'font-weight': 'bold'}" role="listitem" *ngFor="let item of news" [routerLink]="[item._id]">{{item.title}}</mat-list-item>
+</mat-list>
